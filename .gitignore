@@ -1,17 +1,29 @@
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
 venv/
 .venv/
+*.egg-info/
 
-# Jupyter
+# Jupyter Notebook
 .ipynb_checkpoints/
 
 # Mac
 .DS_Store
 
-# Secrets
+# Secrets and environment variables
 .env
+.env.*
+!.env.example
 
 # Temporary files
 *.log
+*.tmp
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
